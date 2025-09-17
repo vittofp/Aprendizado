@@ -1,4 +1,4 @@
-package UseTheHeadJAVA;
+package Aprendizado.UseTheHeadJAVA;
 
 public class Multifor {
     public static void main(String[] args) {

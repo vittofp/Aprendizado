@@ -1,4 +1,4 @@
-package UseTheHeadJAVA;
+package Aprendizado.UseTheHeadJAVA;
 
 public class GoodDogTestDrive {
     public static void main(String[] args) {
@@ -29,10 +29,6 @@ public class GoodDogTestDrive {
 
         pets[3].setName("Eco");
         System.out.println(pets[3].getName());
-
-        husky Ban = new husky();
-        Ban.setSize(120);
-        Ban.bark();
-        Ban.setIdade(5);
+        
     }
 }

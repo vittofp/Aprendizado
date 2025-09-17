@@ -1,4 +1,4 @@
-package TreinoJava;
+package Aprendizado.TreinoJava;
 
 import java.util.Scanner;
 

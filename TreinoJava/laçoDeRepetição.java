@@ -1,4 +1,4 @@
-package TreinoJava;
+package Aprendizado.TreinoJava;
 
 public class laçoDeRepetição {
     public static void main(String[] args) {

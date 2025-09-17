@@ -1,4 +1,4 @@
-package UseTheHeadJAVA;
+package Aprendizado.UseTheHeadJAVA;
 
 public class Misturadas {
     public static void main(String[] args) {

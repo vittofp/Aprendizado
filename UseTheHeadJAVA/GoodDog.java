@@ -1,4 +1,4 @@
-package UseTheHeadJAVA;
+package Aprendizado.UseTheHeadJAVA;
 
 public class  GoodDog {
 
@@ -18,7 +18,7 @@ public class  GoodDog {
     public void setIdade(int idade) {
         this.idade = idade;
     }
-    public int getSize(){
+    public int getSize() {
         return size;
     }
     public void setSize(int s){
