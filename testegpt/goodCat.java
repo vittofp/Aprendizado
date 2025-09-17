@@ -1,8 +1,6 @@
-package Aprendizado.UseTheHeadJAVA;
+package Aprendizado.testegpt;
 
-public class GoodDog {
-
-    private int size;
+public class goodCat {  private int size;
     private String name;
     private int idade;
 
@@ -24,7 +22,8 @@ public class GoodDog {
     public void setSize(int s){
         size = s;
     }
-    void bark(){
+
+    public void bark(){
         if (size > 60){
             System.out.println("Wooof! Wooof!");
         }
@@ -36,3 +35,4 @@ public class GoodDog {
         }
     }
 }
+
