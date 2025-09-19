@@ -6,7 +6,7 @@ public class StartupBust {
     private ArrayList<Startup> startups = new ArrayList<Startup>();
     private int numOfGuesses = 0;
 
-    void setUpGame() {
+    private void setUpGame() {
         Startup one = new Startup();
         one.setName("meta");
         Startup two = new Startup();
@@ -20,20 +20,21 @@ public class StartupBust {
 
         // Estrutura incompleta (Não soube dar continuidade)
         for (Startup startup : startups) {
-
+            ArrayList<String> newLocation = helper.placeStartup(3);
+            startup.setLocationCells(newLocation);
 
         }
     }
 
-    void startPlaying() {
+    private void startPlaying() {
         while (!startups.isEmpty()) {
             helper.getUserInput("Enter a guess");
-            
-
+            checkUserGuess(userGuess);
         }
+        finishGame();
     }
 
-    void checkUserGuess(String userGuess) {
+    private void checkUserGuess(String userGuess) {
         numOfGuesses++;
         String result = "Miss";
 
