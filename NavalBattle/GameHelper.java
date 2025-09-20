@@ -66,7 +66,7 @@ public class GameHelper {
         }
     }
     private ArrayList<String> convertCoordToAlfaFormat(int[] startupCoords){
-        ArrayList<String> alfaCells = new ArrayList<String>();
+        ArrayList<String> alfaCells = new ArrayList<>();
         for (int index : startupCoords){
             String alfaCoord = getAlfaCoordsFromIndex(index);
             alfaCells.add(alfaCoord);

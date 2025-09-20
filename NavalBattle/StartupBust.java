@@ -6,7 +6,7 @@ public class StartupBust {
     private ArrayList<Startup> startups = new ArrayList<Startup>();
     private int numOfGuesses = 0;
 
-    private void setUpGame() {
+    void setUpGame() {
         Startup one = new Startup();
         one.setName("meta");
         Startup two = new Startup();
@@ -26,40 +26,38 @@ public class StartupBust {
         }
     }
 
-    private void startPlaying() {
+    void startPlaying() {
         while (!startups.isEmpty()) {
             helper.getUserInput("Enter a guess");
-            checkUserGuess(userGuess);
         }
-        finishGame();
+
     }
 
-    private void checkUserGuess(String userGuess) {
-        numOfGuesses++;
-        String result = "Miss";
+       private void checkUserGuess (String userGuess){
+            numOfGuesses++;
+            String result = "Miss";
 
-        for (Startup StartupToTest : startups) {
-            result = StartupToTest.checkYourSelf(userGuess);
+            for (Startup StartupToTest : startups) {
+                result = StartupToTest.checkYourSelf(userGuess);
 
-            if (result.equals("Hit")){
-                break;
-            }
+                if (result.equals("Hit")) {
+                    break;
+                }
                 if (result.equals("Kill")) ;
                 {
                     startups.remove(StartupToTest);
                     break;
                 }
             }
-        System.out.println(result);
+            System.out.println(result);
 
         }
-        void finishGame(){
+        void finishGame () {
             System.out.println("Game Over");
-            if (numOfGuesses < 15){
+            if (numOfGuesses < 15) {
                 System.out.println("Congrats");
-            }
-            else {
+            } else {
                 System.out.println("You should have surrended");
+            }
         }
     }
-}

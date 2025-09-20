@@ -5,5 +5,6 @@ public class Gamebust {
         StartupBust game = new StartupBust();
         game.setUpGame();
         game.startPlaying();
+        game.finishGame();
     }
 }
